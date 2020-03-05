@@ -5,10 +5,29 @@
 // import data from './data/rickandmorty/rickandmorty.js';
 // import data from './data/steam/steam.js';
 import data from './data/worldbank/worldbank.js';
+// export const newArrayIndicators = data.filter( item => {
+//    return item.indicatorCode;
+// });
 
-// esta es una función de ejemplo
+// export const newArrayIndicators = (data) => {
+//    data.PER.indicators.map(item => console.log(item.indicators))
+// };
 
-export const example = () => {
-  return 'example';
-};
- 
+// newArrayIndicators(data);
+
+// export const newArrayIndicators = function(){
+//    data.PER.indicators.map(function(indicator) {
+//       console.log(newArrayIndicators);
+//    })
+// }
+
+
+export function newArrayIndicators(){
+
+//    let filtered = data.PER.indicators.filter(i=>i.indicatorCode==="SE.PRM.TENR.FE")
+//    console.log(filtered)
+// }
+   
+
+   let peruFiltered = data.PER.indicators.filter(i=>i.indicatorCode==="SE.PRM.TENR.FE")
+   console.log(peruFiltered)
