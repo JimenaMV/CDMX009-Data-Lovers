@@ -1,4 +1,16 @@
 # Data Lovers
+La educación de las mujeres en Brasil, Chile, México y Perú
+
+Somos una empresa encargada de la manipulación y presentación de los indicadores que utiliza el Banco Mundial sobre el tema de la educación en América Latina para permitirle, a los interesados, la visualización de las condiciones en las que se encuentran, con el proposito de permitir el desarrollo de investigaciones o visalizar las áreas de oportunidad se necesitan que se fortalezcan.
+
+Usuario: público interesado en temas de educación, desarrollo en América Latina, gobiernos, Organizaciones no gubernamentales.
+
+Objetivo: con nuestra página se prentende facilitar la manipulación e interpretación de datos, para que el público interesado pueda emplearlos en la interpretación o como fuente para proyectos que busquen la solución de problemas.
+
+![completa.jpeg](src/img/completa.jpeg)
+![main.jpeg](src/img/main.jpeg)
+![card.jpeg](src/img/card.jpeg)
+
 
 ## Índice
 
@@ -88,14 +100,14 @@ y de equipo.
 
 ### UX
 
-- [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-- [ ] Crear prototipos para obtener _feedback_ e iterar.
-- [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
+- [X] Diseñar la aplicación pensando y entendiendo al usuario.
+- [x] Crear prototipos para obtener _feedback_ e iterar.
+- [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 - [ ] Planear y ejecutar _tests_ de usabilidad.
 
 ### HTML y CSS
 
-- [ ] Entender y reconocer por qué es importante el HTML semántico.
+- [x] Entender y reconocer por qué es importante el HTML semántico.
 - [ ] Identificar y entender tipos de selectores en CSS.
 - [ ] Entender como funciona `flexbox` en CSS.
 - [ ] Construir tu aplicación respetando el diseño planeado (maquetación).
@@ -121,9 +133,9 @@ y de equipo.
 - [ ] Testear funciones (funciones puras).
 
 ### Git y GitHub
-- [ ] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
-- [ ] Utilizar los repositorios de GitHub (`clone` | `fork` | gh-pages).
-- [ ] Colaborar en Github (pull requests).
+- [x] Ejecutar comandos de git (`add` | `commit` | `pull` | `status` | `push`).
+- [x] Utilizar los repositorios de GitHub (`clone` | `fork` | gh-pages).
+- [x] Colaborar en Github (pull requests).
 
 ### Buenas prácticas de desarrollo
 - [ ] Organizar y dividir el código en módulos (Modularización).
