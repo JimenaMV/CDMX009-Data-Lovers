@@ -5,6 +5,7 @@
 // import data from './data/rickandmorty/rickandmorty.js';
 // import data from './data/steam/steam.js';
 import data from './data/worldbank/worldbank.js';
+export const example=()=>{return "example";};
 // export const newArrayIndicators = data.filter( item => {
 //    return item.indicatorCode;
 // });
@@ -22,12 +23,46 @@ import data from './data/worldbank/worldbank.js';
 // }
 
 
-export function newArrayIndicators(){
+// export function newArrayIndicatorsPeru(data){
 
-//    let filtered = data.PER.indicators.filter(i=>i.indicatorCode==="SE.PRM.TENR.FE")
-//    console.log(filtered)
+// //    let filtered = data.PER.indicators.filter(i=>i.indicatorCode==="SE.PRM.TENR.FE")
+// //    console.log(filtered)
+// // }
+//    console.log(peruFiltered)
+//    return data.PER.indicators.filter(
+//       item => item.indicatorCode==="SE.PRM.TENR.FE"
+//    )
 // }
-   
 
-   let peruFiltered = data.PER.indicators.filter(i=>i.indicatorCode==="SE.PRM.TENR.FE")
-   console.log(peruFiltered)
+//newArrayIndicators(data)
+
+
+// export function newArrayIndicators(data){
+//    let filteredIndicators = data.filter(function(indicator){
+//       return indicator.indicatorCode === "SE.PRM.TENR.FE"
+//    }) 
+// }
+
+// newArrayIndicators(indicator);
+
+let braArrayIndicators = data.BRA.indicators.filter(indicators=>{
+   return indicators.indicatorCode.includes("SE.PRM.TENR.FE") | (indicators.indicatorCode.includes("SE.ENR.TERT.FM.ZS")) | (indicators.indicatorCode.includes("SE.ENR.PRIM.FM.ZS")) | (indicators.indicatorCode.includes("SE.ENR.SECO.FM.Z")) 
+})
+ console.log(braArrayIndicators); 
+
+ let perArrayIndicators = data.PER.indicators.filter(indicators=>{
+   return indicators.indicatorCode.includes("SE.PRM.TENR.FE") | (indicators.indicatorCode.includes("SE.ENR.TERT.FM.ZS")) | (indicators.indicatorCode.includes("SE.ENR.PRIM.FM.ZS")) | (indicators.indicatorCode.includes("SE.ENR.SECO.FM.Z")) 
+})
+ console.log(perArrayIndicators); 
+
+
+ let chlArrayIndicators = data.CHL.indicators.filter(indicators=>{
+   return indicators.indicatorCode.includes("SE.PRM.TENR.FE") | (indicators.indicatorCode.includes("SE.ENR.TERT.FM.ZS")) | (indicators.indicatorCode.includes("SE.ENR.PRIM.FM.ZS")) | (indicators.indicatorCode.includes("SE.ENR.SECO.FM.Z")) 
+})
+ console.log(chlArrayIndicators); 
+
+
+ let mexArrayIndicators = data.MEX.indicators.filter(indicators=>{
+   return indicators.indicatorCode.includes("SE.PRM.TENR.FE") | (indicators.indicatorCode.includes("SE.ENR.TERT.FM.ZS")) | (indicators.indicatorCode.includes("SE.ENR.PRIM.FM.ZS")) | (indicators.indicatorCode.includes("SE.ENR.SECO.FM.Z")) 
+})
+ console.log(mexArrayIndicators); 

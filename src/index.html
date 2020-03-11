@@ -6,11 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--Menú de navegación-->
     <header>
       <nav id ="nav-main">
+        <img id="logo-data" src="img/logo-data.svg" alt="logotype">
+
+        <!-- Para el menú, en vez de form, utilizaríamos un clickable dropdown -->
+
+
         <form action="">
           <select name="" id="country">
             <option value="Brazil">Brasil</option>
@@ -31,14 +37,11 @@
         </button>
       <input type="search" id="txt-search" placeholder="Búsqueda" name="txt-search">
       </nav>
-      <div id ="logo">
-        <img src="" alt="logotype">
-      </div>
     </header>
     <main>
         <h1>Indicadores de Banco Mundial</h1>
         <div id="mapa"> <!--comprobar si son botones los que se van a utilizar para el mapa-->
-          <img src="" alt="">
+          <img src="img/mapa-america-morado.svg" alt="">
         </div>
         <section name="About-us">
           <p>aquí va la explicación</p>
@@ -92,6 +95,33 @@
         <section name="tercera-Mex"></section>
 
         <section name="cuarta-Per"></section>
+
+        <!-- Module de ¿Quiénes somos -->
+        <!-- Este es nuestra referencia de quienes somos, ya tenemos nuestro boton definido más arriba -->
+        <a href="#" id="open">¿Quiénes somos?</a>
+        
+        
+        <div class="modal" id="myModal">
+          <div class="flex" id="flex">
+            <div class="modal-content">
+              <div class="modal-header flex">
+                <h2>Nuestra labor</h2>
+                <span class="close" id="close">&times;</span>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit qui, iste ipsam temporibus rem eaque esse voluptatem aliquam quod alias exercitationem suscipit maiores, aut doloremque! Molestiae, temporibus distinctio provident accusantium adipisci laborum pariatur, aliquam ut suscipit labore enim quis hic.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <!--Portada con logo  -->
+    <section id="cover">
+      <img src="img/logo-data.svg" alt="">
+    </section>
+
     </main>
     <footer><!--aquí van los enlaces-->
       <img src="" alt="">
