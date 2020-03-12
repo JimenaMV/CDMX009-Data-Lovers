@@ -11,35 +11,40 @@
   <body>
     <!--Menú de navegación-->
     <header>
-      <nav id ="nav-main">
+
+      <nav>
         <img id="logo-data" src="img/logo-data.svg" alt="logotype">
-
-        <!-- Para el menú, en vez de form, utilizaríamos un clickable dropdown -->
-
-
-        <form action="">
-          <select name="" id="country">
-            <option value="Brazil">Brasil</option>
-            <option value="Chile">Chile</option>
-            <option value="Mexico">México</option>
-            <option value="Peru">Perú</option>
-          </select>
-        </form>
-        <form action="">
-          <select name="" id="indicator">
-            <option value="Population">Población</option>
-            <option value="Education">Educación</option>
-            <option value="Jobs">Empleo</option>
-            <option value="Violence">Violencia</option>
-          </select>
-        </form>
-        <button id="btn-about">Acerca de nosotras
-        </button>
-      <input type="search" id="txt-search" placeholder="Búsqueda" name="txt-search">
-      </nav>
-    </header>
-    <main>
         <h1>Indicadores de Banco Mundial</h1>
+        <!-- <button id="btn-about">Acerca de nosotras
+        </button> -->
+        <div class="dropdown">
+          <button class="dropbtn">Países</button>
+          <div class="dropdown-content">
+            <a href="#"id="mexico" >México</a>
+            <a href="#" id="brasil">Brasil</a>
+            <a href="#" id="peru">Perú</a>
+            <a href="#" id="chile">Chile</a>
+          </div>
+        </div>
+
+        <div class="dropdown2">
+          <button class="dropbtn">Indicadores</button>
+          <div class="dropdown-content">
+            <a href="#" id="indicatorOne">Indicador1</a>
+            <a href="#" id="indicatorTwo">Indicador2</a>
+            <a href="#" id="indicatorThree">Indicador3</a>
+            <a href="#" id="indicatorFour">Indicador4</a>
+          </div>
+        </div>
+          
+      </nav> 
+        <!-- Para el menú, en vez de form, utilizaríamos un clickable dropdown -->
+      <!-- <input type="search" id="txt-search" placeholder="Búsqueda" name="txt-search"> -->
+      
+    </header>
+
+    <main>
+        
         <div id="mapa"> <!--comprobar si son botones los que se van a utilizar para el mapa-->
           <img src="img/mapa-america-morado.svg" alt="">
         </div>
