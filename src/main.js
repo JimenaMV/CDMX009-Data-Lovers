@@ -1,4 +1,3 @@
-import { example } from './data.js';
+import data from './data/worldbank/worldbank.js';
 
-console.log(example);
-
+console.log (data);

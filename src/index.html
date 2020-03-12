@@ -2,17 +2,101 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Data Lovers</title>
+    <title>Indicadores Banco Mundial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Banco mundiallllll</h1>
-    <p> probando: 1, 2, 3</p>
-        
-    </div>
+    <!--Menú de navegación-->
+    <header>
+      <nav id ="nav-main">
+        <form action="">
+          <select name="" id="country">
+            <option value="Brazil">Brasil</option>
+            <option value="Chile">Chile</option>
+            <option value="Mexico">México</option>
+            <option value="Peru">Perú</option>
+          </select>
+        </form>
+        <form action="">
+          <select name="" id="indicator">
+            <option value="Population">Población</option>
+            <option value="Education">Educación</option>
+            <option value="Jobs">Empleo</option>
+            <option value="Violence">Violencia</option>
+          </select>
+        </form>
+        <button id="btn-about">Acerca de nosotras
+        </button>
+      <input type="search" id="txt-search" placeholder="Búsqueda" name="txt-search">
+      </nav>
+      <div id ="logo">
+        <img src="" alt="logotype">
+      </div>
+    </header>
+    <main>
+        <h1>Indicadores de Banco Mundial</h1>
+        <div id="mapa"> <!--comprobar si son botones los que se van a utilizar para el mapa-->
+          <img src="" alt="">
+        </div>
+        <section name="About-us">
+          <p>aquí va la explicación</p>
+          <button id="btn-exit">Cerrar</button>
+        </section>
+        <section name="Education">
+          <h2>Educación</h2>
+          <article>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non excepturi cum harum, magni voluptatibus dolore deleniti ab sunt sequi distinctio, natus itaque suscipit repellat consequuntur molestiae! Quod qui voluptatibus repellendus.</p>
+          <div>
+            <form action="">
+              <option value="edu-elem-wom">Educación Básica de mujeres</option>
+              <option value="secu">Secundaria</option>
+              <option value="prep">preparatoria</option>
+              <option value="inscr">inscripción</option>
+              <option value="desertion">Deserción escolar</option>
+              <option value="men-women">comparación de hombres y mujeres</option>
+            </form>
+            <form action="">
+              <option value="Braz">Brasil</option>
+              <option value="Chil">Chile</option>
+              <option value="Mex">México</option>
+              <option value="Per">Perú</option>
+            </form>
+          </div>
+          <div> <!--aquí va el porcentaje a mostrar, checar como se muestra-->
+            <p>
+
+            </p>
+          </div>
+        </article>
+        <article>
+          <div>
+            <p> explicación de la gráfica</p>
+            <div>
+              <button id="btn-charts">Graficar</button>
+            </div>
+            <div> 
+              <img src="" alt=""> <!--aquí va la gráfica-->
+            </div>
+          </div>
+          <button id="btn-return">Cerrar</button>
+          </article>
+        </section>
+        <section name="primera-Bras">
+
+        </section>
+        <section name="segunda-Chil">
+
+        </section>
+        <section name="tercera-Mex"></section>
+
+        <section name="cuarta-Per"></section>
+    </main>
+    <footer><!--aquí van los enlaces-->
+      <img src="" alt="">
+    </footer>
+
     <script type="module" src="main.js"></script>
   </body>
 </html>
