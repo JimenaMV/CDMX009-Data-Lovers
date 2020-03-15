@@ -8,17 +8,59 @@
 
 body{
     background-color: #5E5E5E;
-    /* font-family: Arial, Helvetica, sans-serif; */
     font-family: 'Poppins', sans-serif;
     color: rgb(207, 207, 207);
-}
-/* Portada */
-#cover{
-    background-color: #A35FA6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+  }
+
+  /* Portada */
+
+  .wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    background-size: 100%;
+    width: auto;
+    height: 750px;
+    background-color: rgb(123, 91, 124);
+    background-size: 100%;
+  }
+  
+  #Path_133, #Visual_Data, #J_L {
+    stroke: #fff;
+    fill: #fff;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0,0.23,1,.1);
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffet: 1800;
+      }
+    
+    30% {
+      opacity: 10;
+      fill: none;
+      stroke-dashoffet: 1800;
+      }
+    
+    90% {
+      fill: (225,225,225,0);
+      }
+    
+    100% {
+      opacity: 10;
+      fill: (225,225,225,0);
+      }
+    }
 
 /* Barra de navegación */
 
@@ -37,58 +79,80 @@ nav img{
     margin-right: 200px;
 }
 
-/* Botón Dropdown paises */
-.dropbtn {
+/* Botón acera de nosotras */
+#aboutbtn {
   background-color: rgb(149, 96, 218);
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
 }
-/* Botón dropdown para indicadores */
-.dropbtn-indicators {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+/* Parrafo instrucciones */
+.instructions {
+  background-color: rgb(123, 91, 124);
+}
+/* Menú dropdown */
+
+.menu {
+  background-color: rgb(123, 91, 124);
+  text-align: center;
 }
 
-/* Posición del div */
-.dropdown {
-  position: relative;
-  display: inline-block;
+.menu ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
 }
 
-/* Contenido oculto del dropdown */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.menu ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
 }
 
-/* Links dentro de la lista dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+.menu ul li a {
   text-decoration: none;
-  display: block;
+  color:#fff;
 }
 
-/* Cambio de color de los links */
-.dropdown-content a:hover {background-color: #ddd;}
+.menu ul li:hover
+{
+  background: rgb(161, 118, 163);
+  border-radius: 3px;
+}
 
-/* Mostrar la lista de paises */
-.dropdown:hover .dropdown-content {display: block;}
+.submenu-1 {
+  display: none;
+}
 
-/* Cambio de color del boton cuando el contenido se muestra */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
- 
+.menu ul li:hover .submenu-1
+{
+  display: block;
+  position: absolute;
+  background-color: rgb(173, 136, 173);
+  margin-top: 15px;
+  margin-left: -15px;
+}
 
+/* Alinear verticalmente el menú */
+.menu ul li:hover .submenu-1 ul {
+  display: block;
+  margin: 10px;
+}
 
+.menu ul li:hover .submenu-1 ul li 
+{
+  width: 150px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu ul li:hover .submenu-1 ul li a:hover
+{
+  color: #5E5E5E;
+}
 
 main{
     display: flex;
@@ -97,6 +161,51 @@ main{
     align-items: center;
 }
 
+/* Mapa svg */
+/* #mexico {
+  fill: A35FA6;
+  animation: pulse 1s infinite;
+  animation: giro 0.5s infinite;
+}
+
+#brasil {
+  fill: A35FA6;
+  animation: giro 0.5s infinite;
+}
+
+#chile {
+  fill: A35FA6;
+  animation: giro 0.5s infinite;
+}
+
+#peru {
+  fill: A35FA6;
+  animation: giro 0.6s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: transtaleY(-50px);
+  }
+  50% {
+    transform: transtaleY(0px);
+  }
+  100% {
+    transform: transtaleY(50px);
+  }
+}
+
+@keyframes giro {
+  0% {
+    transform: rotate(1deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(-1deg);
+  }
+} */
 
 .flex{
     width: 100%;
@@ -108,4 +217,13 @@ main{
 
 .modal{
     display: none;
+}
+
+#peru{
+  transition: all .3s;
+}
+#peru:hover{
+  fill:red;
+  transform: scale(1.2) translateX(-20px);
+  -webkit-transform-origin-x: center;
 }
