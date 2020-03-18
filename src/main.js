@@ -1,30 +1,64 @@
 import data from './data/worldbank/worldbank.js';
-// import {example} from './data.js';
-import { filtro} from './data.js';
+import { getIndicatorsByBra, getIndicatorsByPer, getIndicatorsByChl, getIndicatorsByMex } from './data.js';
 
-console.log(filtro(data));
+// console.log(data)
 
-// console.log (braArrayIndicators());
-// console.log(data.BRA.indicators);
-// console.log (indicatorCountry);
-// console.log(data);
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-//   }
-  
-//   // Close the dropdown if the user clicks outside of it
-//   window.onclick = function(event) {
-//     if (!event.target.matches('.dropbtn')) {
-//       var dropdowns = document.getElementsByClassName("dropdown-content");
-//       var i;
-//       for (i = 0; i < dropdowns.length; i++) {
-//         var openDropdown = dropdowns[i];
-//         if (openDropdown.classList.contains('show')) {
-//           openDropdown.classList.remove('show');
-//         }
-//       }
-//     }
-//   }
+console.log(getIndicatorsByBra())
+console.log(getIndicatorsByPer())
+console.log(getIndicatorsByChl())
+console.log(getIndicatorsByMex())
+
+
+//Cambio de pantalla
+let firtsScreen = document.getElementById("portada");
+let secondScreen = document.getElementById("content");
+let mapAmerica = document.getElementById ("mapa-america");
+
+
+// Funciones para el cambio de pantallas
+
+function segundaPantalla() {
+    firtsScreen.style="display:none";
+    secondScreen.style="display:block";
+}
+
+//Listeners
+document.getElementById("logo").addEventListener("click", segundaPantalla);
+
+
+
+
+//Modal, ¿Quiénes somos?
+
+let modal = document.getElementById('miModal');
+
+
+function openModal (){
+    modal.style.display = 'block';
+}
+
+function closeModal (){
+    modal.style.display = 'none';
+}
+
+
+document.getElementById('aboutbtn').addEventListener('click', openModal);
+document.getElementById('close').addEventListener('click', closeModal);
+
+
+
+//Acceder al mapa desde un archivo svg externo
+function mexCountry () {
+    let mapAmericaDoc = mapAmerica.contentDocument; mapAmericaDoc.getElementById().style.fill="red"
+}
+
+
+
+
+
+
+
+
+
+

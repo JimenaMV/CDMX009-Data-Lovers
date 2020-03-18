@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #5E5E5E;
+    background-color:  rgb(123, 91, 124);
     font-family: 'Poppins', sans-serif;
     color: rgb(207, 207, 207);
     background-size: cover;
@@ -18,7 +18,6 @@ body{
   }
 
   /* Portada */
-
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -68,33 +67,44 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color:  rgb(139, 139, 139);
+    background-color:  rgb(121, 118, 121);
     position: relative;
 }
 
+nav h1 {
+  color: rgb(233, 233, 233);
+}
 
 nav img{
-    width: 20%;
-    margin: 30px;
-    margin-right: 200px;
+    width: 15%;
+    margin: 15px;
 }
 
 /* Botón acera de nosotras */
 #aboutbtn {
-  background-color: rgb(149, 96, 218);
+  background-color: rgba(255, 255, 255, 0.11);
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 15px;
 }
+
 /* Parrafo instrucciones */
 .instructions {
-  background-color: rgb(123, 91, 124);
+  background-color: rgb(118, 98, 119);
+}
+
+.instructions p{
+  padding: 20px;
+  font-size: 12px;
 }
 /* Menú dropdown */
 
 .menu {
-  background-color: rgb(123, 91, 124);
+  background-color: rgba(171, 151, 172, 0.822);
   text-align: center;
 }
 
@@ -106,8 +116,8 @@ nav img{
 
 .menu ul li {
   width: 120px;
-  margin: 15px;
-  padding: 15px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .menu ul li a {
@@ -117,7 +127,7 @@ nav img{
 
 .menu ul li:hover
 {
-  background: rgb(161, 118, 163);
+  background: rgba(161, 118, 163, 0.534);
   border-radius: 3px;
 }
 
@@ -161,69 +171,191 @@ main{
     align-items: center;
 }
 
-/* Mapa svg */
-/* #mexico {
-  fill: A35FA6;
-  animation: pulse 1s infinite;
-  animation: giro 0.5s infinite;
-}
 
-#brasil {
-  fill: A35FA6;
-  animation: giro 0.5s infinite;
-}
 
-#chile {
-  fill: A35FA6;
-  animation: giro 0.5s infinite;
-}
+/* Animación de Mapa */
 
-#peru {
-  fill: A35FA6;
-  animation: giro 0.6s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: transtaleY(-50px);
-  }
-  50% {
-    transform: transtaleY(0px);
-  }
-  100% {
-    transform: transtaleY(50px);
-  }
-}
-
-@keyframes giro {
-  0% {
-    transform: rotate(1deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  80% {
-    transform: rotate(-1deg);
-  }
-} */
-
-.flex{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.modal{
-    display: none;
-}
-
-#peru{
+#peru, #mexico, #chile, #brasil {
   transition: all .3s;
 }
+
 #peru:hover{
-  fill:red;
+  fill: #A35FA6;
+  opacity: 0.5;
   transform: scale(1.2) translateX(-20px);
   -webkit-transform-origin-x: center;
+}
+
+#mexico:hover{
+  fill: #A35FA6;
+  opacity: 0.5;
+  transform: scale(1.2) translateX(-20px);
+  -webkit-transform-origin-x: center;
+}
+
+#brasil:hover{
+  fill: #A35FA6;
+  opacity: 0.5;
+  transform: scale(1.2) translateX(-20px);
+  -webkit-transform-origin-x: center;
+}
+
+#chile:hover{
+  fill: rgb(158, 52, 163);
+  transform: scale(1.2) translateX(-20px);
+  -webkit-transform-origin-x: center;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+}
+
+
+/* Modal */
+
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(128, 126, 126, 0.7);  
+}
+
+.modal-body p {
+  font-size: 12px;
+  color: rgb(61, 14, 63);
+}
+
+.modal-header h2 {
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+  
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenido-modal {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  width: 30%;
+  animation-name: modal;
+  animation-duration: 1s;
+}
+
+@keyframes modal {
+  from {top:-330px; opacity: 0;}
+  to{top:0; opacity: 1;}
+}
+
+.close {
+  color: rgb(61, 14, 63);
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.close:hover{
+  color:#fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 5px;
+  background-color: rgb(123, 91, 124);
+}
+
+.modal-body{
+  padding: 20px;
+}
+
+
+/* Sección para que se muestren las gráficas */
+
+
+.header-graphics{
+  background-color: #A35FA6;
+  height: 50px;
+  background-color:  rgb(118, 98, 119);
+  
+  
+}
+.infoGraphics {
+  position: relative;
+  background-color: #fff;
+  width: 40%;
+  color: #A35FA6;
+  border-bottom-left-radius: 20px;
+}
+
+h4{
+  color: #fff;
+  padding: 10px;
+}
+
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  rgb(121, 118, 121);
+  position: relative;
+  height: 60px;
+}
+
+#wb-icon{
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info-j-l{
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wrapper-map{
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#mapa-america{
+    width: 100%;
+    height: auto;
+    margin-left: 80px;
+}
+
+.wrapper{
+  width: 40%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#logo {
+  width: 100%;
+  height: auto;
 }
