@@ -104,7 +104,7 @@ nav img{
 /* Menú dropdown */
 
 .menu {
-  background-color: rgba(171, 151, 172, 0.822);
+  background-color: rgba(171, 151, 172, 0.1 );
   text-align: center;
 }
 
@@ -238,8 +238,8 @@ main{
 }
 
 .modal-body p {
-  font-size: 12px;
-  color: rgb(61, 14, 63);
+  font-size: 14px;
+  color: rgb(123, 91, 124);
 }
 
 .modal-header h2 {
@@ -251,15 +251,31 @@ main{
 .modal-header {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(123, 91, 124);
 }
+
 
 .contenido-modal {
   position: relative;
-  background-color: #fff;
+  background-color: rgb(214, 214, 214);
   margin: auto;
   width: 30%;
   animation-name: modal;
   animation-duration: 1s;
+}
+
+#modal-countries .contenido-modal {
+  width: 80%;
+}
+
+#modal-countries .contenido-modal h3 {
+  text-align: center;
+  color: #444;
+}
+
+#modal-countries .contenido-modal {
+  width: 80%;
 }
 
 @keyframes modal {
@@ -280,10 +296,7 @@ main{
   cursor: pointer;
 }
 
-.modal-header {
-  padding: 5px;
-  background-color: rgb(123, 91, 124);
-}
+
 
 .modal-body{
   padding: 20px;
@@ -293,25 +306,6 @@ main{
 /* Sección para que se muestren las gráficas */
 
 
-.header-graphics{
-  background-color: #A35FA6;
-  height: 50px;
-  background-color:  rgb(118, 98, 119);
-  
-  
-}
-.infoGraphics {
-  position: relative;
-  background-color: #fff;
-  width: 40%;
-  color: #A35FA6;
-  border-bottom-left-radius: 20px;
-}
-
-h4{
-  color: #fff;
-  padding: 10px;
-}
 
 
 
@@ -359,3 +353,14 @@ footer {
   width: 100%;
   height: auto;
 }
+
+
+/* Modales para cards paises */
+
+.graphics img{
+  width: 350px;
+  margin-top: 20px;
+  width: 100%;
+  height: auto; 
+}
+

@@ -1,4 +1,41 @@
- import data from './data/worldbank/worldbank.js';
+import data from './data/worldbank/worldbank.js';
+export default getCountries();
+
+function getCountries() {
+    let countries = {};
+    let indicatorsWanted = [
+        "SE.PRM.TENR.FE",
+        "SE.ENR.TERT.FM.ZS",
+        "SE.ENR.PRIM.FM.ZS",
+        "SE.ENR.SECO.FM.ZS"
+    ];
+
+    for (const countryKey in data) {
+        let indicatorsFiltered = data[countryKey].indicators.filter(indicator => {
+            if (!indicatorsWanted.includes(indicator.indicatorCode)) {
+                return false;
+            }
+            
+            let filteredData = {};
+            for (const year in indicator.data) {
+                if (indicator.data[year]) {
+                    filteredData[year] = parseInt(indicator.data[year] * 100) / 100;
+                }
+            }
+            indicator.filteredData = filteredData;
+            return true;
+        }
+        );
+
+        countries[countryKey] = {
+            name: data[countryKey].indicators[0].countryName,
+            code: countryKey,
+            indicatorsFiltered
+        };
+    }
+
+    return countries;
+}
 
 
 // export const example=()=>{return "example";};

@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8">
-    <title>Indicadores Banco Mundial</title>
+    <title>La educación de las mujeres en Brasil, Chile, México y Perú</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" />
@@ -32,32 +32,44 @@
       <header>
         <nav>
           <img id="logo-data" src="img/logo-data.svg" alt="logotype">
-          <h1>Indicadores de Banco Mundial</h1>
+          <h1>La educación de las mujeres en Brasil, Chile, México y Perú</h1>
           <button id="aboutbtn">Acerca de nosotras
           </button>
         </nav> 
-        <section class="instructions">
+        <!-- <section class="instructions">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt veniam harum quia vero quo cum, dolorum veritatis quas quidem ut error. Enim officia, consequuntur odio voluptate, ea quae dolorem dignissimos accusamus cum nisi recusandae eos optio accusantium quas ut similique labore quidem consequatur error? Sequi possimus provident ea id itaque.</p>
-        </section>
+        </section> -->
         <section class="menu">
           <ul>
             <li><a href="#">Países</a>
               <div class="submenu-1">
                 <ul>
-                  <li><a href="#"id="">México</a></li>
-                  <li><a href="#" id="brasil">Brasil</a></li>
-                  <li><a href="#" id="peru">Perú</a></li>
-                  <li><a href="#" id="chile">Chile</a></li>
+                  <li>
+                    <a href="#" id="show-indicators-mex"
+                    class="show-indicators" data-country="MEX">México</a>
+                  </li>
+                  <li>
+                    <a href="#" id="show-indicators-bra"
+                      class="show-indicators" data-country="BRA">Brasil</a>
+                  </li>
+                  <li>
+                    <a href="#" id="show-indicators-per"
+                      class="show-indicators" data-country="PER">Perú</a>
+                  </li>
+                  <li>
+                    <a href="#" id="show-indicators-chl"
+                      class="show-indicators" data-country="CHL">Chile</a>
+                  </li>        
                 </ul>
               </div>
             </li>
             <li><a href="#">Indicadores</a>
             <div class="submenu-1">
                 <ul>
-                  <li><a href="#" id="indicatorOne">Indicador1</a></li>
-                  <li><a href="#" id="indicatorOne">Indicador2</a></li>
-                  <li><a href="#" id="indicatorOne">Indicador3</a></li>
-                  <li><a href="#" id="indicatorOne">Indicador</a></li>
+                  <li><a href="#" id="indicatorOne">Total de mujeres en primaria</a></li>
+                  <li><a href="#" id="indicatorOne">Proporción mujeres en educación terciaria</a></li>
+                  <li><a href="#" id="indicatorOne">Proporción mujeres en educación secundaria</a></li>
+                  <li><a href="#" id="indicatorOne">Proporción mujeres en educación primaria</a></li>
                 </ul>
               </div>
             </li>
@@ -66,7 +78,7 @@
       </header>
       <main>
         <section class="wrapper-map">
-          <object id="mapa-america" data="img/mapa-america.svg" type="image/svg+xml" >
+          <object id="mapa-america" data="img/mapa-america1.svg" type="image/svg+xml" >
           </object>    
         </section>  
 
@@ -79,10 +91,27 @@
             <div class= "flex">
               <div class="contenido-modal">
                 <div class="modal-header">
-                  <h2>Nuestra labor</h2>
+                  <h2>¿Quiénes somos?</h2>
                   <span class="close" id="close">&times;</span>  
                 </div>
                 <div class="modal-body">
+                  <p>
+                    Somos una empresa encargada de la manipulación y presentación de los indicadores que utiliza el Banco Mundial sobre el tema de la educación en América Latina para permitirle, a los interesados, la visualización de las condiciones en las que se encuentran, con el proposito de permitir el desarrollo de investigaciones o visalizar las áreas de oportunidad se necesitan que se fortalezcan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+          <!-- Modal dinámico -->
+          <div id="modal-countries" class="modal" >
+            <div id="modal-countries-wrapper" class="flex">
+              <div class="contenido-modal">
+                <div class="modal-header">
+                  <h2 id="modal-country-title">País</h2>
+                  <span class="close" id="countries-modal-close">&times;</span>  
+                </div>
+                <div id="modal-countries-body" class="modal-body">
                   <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit qui, iste ipsam temporibus rem eaque esse voluptatem aliquam quod alias exercitationem suscipit maiores, aut doloremque! Molestiae, temporibus distinctio provident accusantium adipisci laborum pariatur, aliquam ut suscipit labore enim quis hic.
                   </p>
@@ -90,24 +119,8 @@
               </div>
             </div>
           </div>
-       
 
-        <!-- Modales por país de los 4 indicadores -->
-        <div id="modalMexico" class="modal" >
-          <div class= "flex">
-            <div class="contenido-modal">
-              <div class="modal-header">
-                <h2>México</h2>
-                <span class="close" id="close">&times;</span>  
-              </div>
-              <div class="modal-body">
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit qui, iste ipsam temporibus rem eaque esse voluptatem aliquam quod alias exercitationem suscipit maiores, aut doloremque! Molestiae, temporibus distinctio provident accusantium adipisci laborum pariatur, aliquam ut suscipit labore enim quis hic.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        
 
 
 
@@ -127,7 +140,7 @@
       </div>
      
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script type="module" src="main.js"></script>
   </body>
 </html>
