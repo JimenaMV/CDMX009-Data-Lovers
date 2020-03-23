@@ -216,6 +216,7 @@ document.getElementById("miModal").addEventListener("click", function(event) {
 
 
 
+<<<<<<< HEAD
 // Funcionalidad del mapa con snap.js
 
 // window.onload = function() {
@@ -234,3 +235,9 @@ wrapper-map = appendChild(svg)
 
 
 //export default svg;
+=======
+//Acceder al mapa desde un archivo svg externo
+function mexCountry () {
+    let mapAmericaDoc = mapAmerica.contentDocument; mapAmericaDoc.getElementById().style.fill="red"
+}
+>>>>>>> 1847bdc780486bbf2e6bf4f6ba29c07f97ec17c0

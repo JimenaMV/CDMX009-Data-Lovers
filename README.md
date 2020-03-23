@@ -129,8 +129,13 @@ y de equipo.
 ### HTML y CSS
 
 - [x] Entender y reconocer por qué es importante el HTML semántico.
+<<<<<<< HEAD
 - [x] Identificar y entender tipos de selectores en CSS.
 - [x] Entender como funciona `flexbox` en CSS.
+=======
+- [ ] Identificar y entender tipos de selectores en CSS.
+- [ ] Entender como funciona `flexbox` en CSS.
+>>>>>>> 1847bdc780486bbf2e6bf4f6ba29c07f97ec17c0
 - [x] Construir tu aplicación respetando el diseño planeado (maquetación).
 
 ### DOM
@@ -141,6 +146,7 @@ y de equipo.
 
 ### Javascript
 
+<<<<<<< HEAD
 - [ ] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
 - [ ] Manipular objects (key | value).
 - [ ] Entender el uso de condicionales (`if-else` | `switch`).
@@ -149,6 +155,16 @@ y de equipo.
 - [x] Utilizar funciones (parámetros | argumentos | valor de retorno).
 - [ ] Entender la diferencia entre tipos de datos atómicos y estructurados.
 - [ ] Utilizar ES Modules (`import` | `export`).
+=======
+- [x] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
+- [x] Manipular objects (key | value).
+- [x] Entender el uso de condicionales (`if-else` | `switch`).
+- [x] Entender el uso de bucles (`for` | `forEach`).
+- [ ] Entender la diferencia entre expression y statements.
+- [x] Utilizar funciones (parámetros | argumentos | valor de retorno).
+- [X] Entender la diferencia entre tipos de datos atómicos y estructurados.
+- [x] Utilizar ES Modules (`import` | `export`).
+>>>>>>> 1847bdc780486bbf2e6bf4f6ba29c07f97ec17c0
 
 ### Pruebas Unitarias (_testing_)
 - [ ] Testear funciones (funciones puras).
