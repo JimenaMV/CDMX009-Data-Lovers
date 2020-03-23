@@ -223,3 +223,14 @@ document.getElementById("miModal").addEventListener("click", function(event) {
 //     Snap.load("img/mapa-america1.svg", function(f){
 //         s.append(f.select("g"));
 //     });
+
+
+// //Mapa con create element
+let svg = document.createElement("svg");
+svg.innerHTML = "src/img/mapa-america1.svg"
+
+let sectionMap = document.querySelector('.wrapper-map')
+wrapper-map = appendChild(svg)
+
+
+//export default svg;
