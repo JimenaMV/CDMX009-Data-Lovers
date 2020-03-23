@@ -7,9 +7,30 @@ Usuario: público interesado en temas de educación, desarrollo en América Lati
 
 Objetivo: con nuestra página se prentende facilitar la manipulación e interpretación de datos, para que el público interesado pueda emplearlos en la interpretación o como fuente para proyectos que busquen la solución de problemas.
 
+
+## Sketches
+
 ![completa.jpeg](src/img/completa.jpeg)
 ![main.jpeg](src/img/main.jpeg)
 ![card.jpeg](src/img/card.jpeg)
+
+### Prototipo
+Prototipo realizado en Adobe XD
+
+![completa.jpeg](src/img/01-Prototipo.png)
+![completa.jpeg](src/img/02-Prototipo.png)
+![completa.jpeg](src/img/03-Prototipo.png)
+![completa.jpeg](src/img/04-Prototipo.png)
+![completa.jpeg](src/img/05-Prototipo.png)
+![completa.jpeg](src/img/06-Prototipo.png)
+
+### Resultado final
+![completa.jpeg](src/img/1-Resultado.png)
+![completa.jpeg](src/img/2-Resultado.png)
+![completa.jpeg](src/img/3-Resultado.png)
+![completa.jpeg](src/img/4-Resultado.png)
+![completa.jpeg](src/img/5-Resultado.png)
+![completa.jpeg](src/img/6-Resultado.png)
 
 
 ## Índice
@@ -108,24 +129,24 @@ y de equipo.
 ### HTML y CSS
 
 - [x] Entender y reconocer por qué es importante el HTML semántico.
-- [ ] Identificar y entender tipos de selectores en CSS.
-- [ ] Entender como funciona `flexbox` en CSS.
-- [ ] Construir tu aplicación respetando el diseño planeado (maquetación).
+- [x] Identificar y entender tipos de selectores en CSS.
+- [x] Entender como funciona `flexbox` en CSS.
+- [x] Construir tu aplicación respetando el diseño planeado (maquetación).
 
 ### DOM
 
-- [ ] Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).
-- [ ] Manejar eventos del DOM. (addEventListener)
-- [ ] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
+- [x] Entender y reconocer los selectores del DOM (querySelector | querySelectorAll).
+- [x] Manejar eventos del DOM. (addEventListener)
+- [x] Manipular dinámicamente el DOM. (createElement, appendchild, innerHTML, value)
 
 ### Javascript
 
 - [ ] Manipular arrays (`filter` | `map` | `sort` | `reduce`).
 - [ ] Manipular objects (key | value).
 - [ ] Entender el uso de condicionales (`if-else` | `switch`).
-- [ ] Entender el uso de bucles (`for` | `forEach`).
-- [ ] Entender la diferencia entre expression y statements.
-- [ ] Utilizar funciones (parámetros | argumentos | valor de retorno).
+- [x] Entender el uso de bucles (`for` | `forEach`).
+- [x] Entender la diferencia entre expression y statements.
+- [x] Utilizar funciones (parámetros | argumentos | valor de retorno).
 - [ ] Entender la diferencia entre tipos de datos atómicos y estructurados.
 - [ ] Utilizar ES Modules (`import` | `export`).
 
@@ -138,8 +159,8 @@ y de equipo.
 - [x] Colaborar en Github (pull requests).
 
 ### Buenas prácticas de desarrollo
-- [ ] Organizar y dividir el código en módulos (Modularización).
-- [ ] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
+- [x] Organizar y dividir el código en módulos (Modularización).
+- [x] Utilizar identificadores descriptivos (Nomenclatura | Semántica).
 - [ ] Utilizar linter para seguir buenas prácticas (ESLINT).
 
 ## 4. Consideraciones generales
