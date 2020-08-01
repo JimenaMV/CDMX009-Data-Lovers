@@ -57,9 +57,7 @@ function getCountries() {
 }
 
 
-<<<<<<< HEAD
 // export const example=()=>{return "example";};
-=======
 // export const example=()=>{return "example";};
 
 // newArrayIndicators(data);
@@ -167,4 +165,4 @@ export function getIndicatorsByMex () {
 //  let mexArrayIndicators = data.MEX.indicators.filter(indicators=>{
 //    return indicators.indicatorCode.includes("SE.PRM.TENR.FE") | (indicators.indicatorCode.includes("SE.ENR.TERT.FM.ZS")) | (indicators.indicatorCode.includes("SE.ENR.PRIM.FM.ZS")) | (indicators.indicatorCode.includes("SE.ENR.SECO.FM.Z"))
 // })
->>>>>>> 1847bdc780486bbf2e6bf4f6ba29c07f97ec17c0
+

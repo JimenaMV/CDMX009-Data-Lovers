@@ -33,9 +33,10 @@ body{
   #Path_133, #Visual_Data, #J_L {
     stroke: #fff;
     fill: #fff;
-    stroke-dasharray: 1800;
+    
     opacity: 10;
-    animation: animate 3s cubic-bezier(0,0.23,1,.1);
+    animation: animate 1s;
+    
   }
   
   @keyframes animate {
@@ -175,27 +176,32 @@ main{
 
 /* Animación de Mapa */
 
-#peru, #mexico, #chile, #brasil {
+.counties-color:hover{
+  transition: all .3s;
+  fill:  #A35FA6;
+  transform: scale(1.2) translateY(5px);
+  -webkit-transform-origin-x: center;
+  cursor: pointer;
+}
+
+/* #peru, #mexico, #chile, #brasil {
   transition: all .3s;
 }
 
 #peru:hover{
-  fill: #A35FA6;
-  opacity: 0.5;
-  transform: scale(1.2) translateX(-20px);
-  -webkit-transform-origin-x: center;
+  fill:  rgb(52, 163, 80);
+  transform: scale(.1) 
+  
 }
 
 #mexico:hover{
-  fill: #A35FA6;
-  opacity: 0.5;
+  fill:  rgb(49, 153, 28);
   transform: scale(1.2) translateX(-20px);
   -webkit-transform-origin-x: center;
 }
 
 #brasil:hover{
-  fill: #A35FA6;
-  opacity: 0.5;
+  fill:  rgb(158, 52, 163);
   transform: scale(1.2) translateX(-20px);
   -webkit-transform-origin-x: center;
 }
@@ -205,14 +211,15 @@ main{
   transform: scale(1.2) translateX(-20px);
   -webkit-transform-origin-x: center;
 }
+*/
 
 #logo {
   cursor: pointer;
-}
+} 
 
 /* Cambio de pantallas */
-/* .content {
-  display: none; */
+.content {
+  display: none;
 }
 
 
@@ -302,10 +309,6 @@ main{
 .modal-body{
   padding: 20px;
 }
-
-
-/* Sección para que se muestren las gráficas */
-
 
 
 
