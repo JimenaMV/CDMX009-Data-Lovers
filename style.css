@@ -1,0 +1,370 @@
+/*Selector universal para quitar margin y padding */
+/* Con border-box, el ancho especificado es el equivalente al ancho total. */
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+}
+
+body{
+    background-color:  rgb(123, 91, 124);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(207, 207, 207);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+  }
+
+  /* Portada */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    width: auto;
+    height: 750px;
+    background-color: rgb(123, 91, 124);
+    background-size: 100%;
+  }
+  
+  #Path_133, #Visual_Data, #J_L {
+    stroke: #fff;
+    fill: #fff;
+    
+    opacity: 10;
+    animation: animate 1s;
+    
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      fill: none;
+      stroke-dashoffet: 1800;
+      }
+    
+    30% {
+      opacity: 10;
+      fill: none;
+      stroke-dashoffet: 1800;
+      }
+    
+    90% {
+      fill: (225,225,225,0);
+      }
+    
+    100% {
+      opacity: 10;
+      fill: (225,225,225,0);
+      }
+    }
+
+/* Barra de navegación */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgb(121, 118, 121);
+    position: relative;
+}
+
+nav h1 {
+  color: rgb(233, 233, 233);
+}
+
+nav img{
+    width: 15%;
+    margin: 15px;
+}
+
+/* Botón acera de nosotras */
+#aboutbtn {
+  background-color: rgba(255, 255, 255, 0.11);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+/* Parrafo instrucciones */
+.instructions {
+  background-color: rgb(118, 98, 119);
+}
+
+.instructions p{
+  padding: 20px;
+  font-size: 12px;
+}
+/* Menú dropdown */
+
+.menu {
+  background-color: rgba(171, 151, 172, 0.1 );
+  text-align: center;
+}
+
+.menu ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+.menu ul li {
+  width: 120px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color:#fff;
+}
+
+.menu ul li:hover
+{
+  background: rgba(161, 118, 163, 0.534);
+  border-radius: 3px;
+}
+
+.submenu-1 {
+  display: none;
+}
+
+.menu ul li:hover .submenu-1
+{
+  display: block;
+  position: absolute;
+  background-color: rgb(173, 136, 173);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+/* Alinear verticalmente el menú */
+.menu ul li:hover .submenu-1 ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu ul li:hover .submenu-1 ul li 
+{
+  width: 150px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu ul li:hover .submenu-1 ul li a:hover
+{
+  color: #5E5E5E;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Animación de Mapa */
+
+.counties-color:hover{
+  transition: all .3s;
+  fill:  #A35FA6;
+  transform: scale(1.2) translateY(5px);
+  -webkit-transform-origin-x: center;
+  cursor: pointer;
+}
+
+/* #peru, #mexico, #chile, #brasil {
+  transition: all .3s;
+}
+
+#peru:hover{
+  fill:  rgb(52, 163, 80);
+  transform: scale(.1) 
+  
+}
+
+#mexico:hover{
+  fill:  rgb(49, 153, 28);
+  transform: scale(1.2) translateX(-20px);
+  -webkit-transform-origin-x: center;
+}
+
+#brasil:hover{
+  fill:  rgb(158, 52, 163);
+  transform: scale(1.2) translateX(-20px);
+  -webkit-transform-origin-x: center;
+}
+
+#chile:hover{
+  fill: rgb(158, 52, 163);
+  transform: scale(1.2) translateX(-20px);
+  -webkit-transform-origin-x: center;
+}
+*/
+
+#logo {
+  cursor: pointer;
+} 
+
+/* Cambio de pantallas */
+.content {
+  display: none;
+}
+
+
+/* Modal */
+
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(128, 126, 126, 0.7);  
+}
+
+.modal-body p {
+  font-size: 14px;
+  color: rgb(123, 91, 124);
+}
+
+.modal-header h2 {
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+  
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(123, 91, 124);
+}
+
+
+.contenido-modal {
+  position: relative;
+  background-color: rgb(214, 214, 214);
+  margin: auto;
+  width: 30%;
+  animation-name: modal;
+  animation-duration: 1s;
+}
+
+#modal-countries .contenido-modal {
+  width: 80%;
+}
+
+#modal-countries .contenido-modal h3 {
+  text-align: center;
+  color: #444;
+}
+
+#modal-countries .contenido-modal {
+  width: 80%;
+}
+
+@keyframes modal {
+  from {top:-330px; opacity: 0;}
+  to{top:0; opacity: 1;}
+}
+
+.close {
+  color: rgb(61, 14, 63);
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+.close:hover{
+  color:#fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.modal-body{
+  padding: 20px;
+}
+
+
+
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:  rgb(121, 118, 121);
+  position: relative;
+  height: 60px;
+}
+
+#wb-icon{
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info-j-l{
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wrapper-map{
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#mapa-america{
+    width: 100%;
+    height: auto;
+    margin-left: 80px;
+}
+
+.wrapper{
+  width: 40%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#logo {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Modales para cards paises */
+
+.graphics img{
+  width: 350px;
+  margin-top: 20px;
+  width: 100%;
+  height: auto; 
+}
+
